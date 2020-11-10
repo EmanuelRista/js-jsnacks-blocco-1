@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+
+    //jsnack 2
+      var bici = [
+        {
+          nome: "Bici1",
+          peso: 10
+        },
+        {
+          nome: "Bici2",
+          peso: 15
+        },
+        {
+          nome: "Bici3",
+          peso: 20
+        }
+      ];
+
+      var bicipesominore = bici[0];
+      for(var i = 0; i < bici.length; i++) {
+
+        if(bici[i].peso < bicipesominore.peso){
+          bicipesominore=bici[i];
+        }
+      }
+
+      console.log(bicipesominore);
+
+    </script>
+  </body>
+</html>
