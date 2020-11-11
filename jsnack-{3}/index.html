@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jsnack3</title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+    //JSnack3
+      triangolo = {
+        'base': 20,
+        'altezza': 10,
+        'area': (this.base * this.altezza) / 2,
+        'ipotenusa': undefined,
+        'perimetro': undefined
+      };
+
+      triangolo.ipotenusa = ((( triangolo.base * 2 ) + ( triangolo.altezza * 2 )) / 2);
+      triangolo.perimetro = triangolo.ipotenusa + triangolo.base + triangolo.altezza;
+
+    console.log('perimetro', triangolo.perimetro, 'ipotenusa', triangolo.ipotenusa);
+
+    </script>
+  </body>
+</html>
