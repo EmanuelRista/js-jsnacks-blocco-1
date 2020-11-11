@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jsnack4</title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+
+    var teams = [
+      {
+        "nome": "Torino",
+        "punti": 0,
+        "falli": 0
+      },
+      {
+        "nome": "Juventus",
+        "punti": 0,
+        "falli": 0
+      },
+      { "nome": "Borussia Dortmund",
+      "punti": 0,
+      "falli": 0}
+    ];
+
+    function randomNumber(){
+      return Math.floor((Math.random() * 100) + 1);
+    };
+
+    for(var i=0; i < teams.length; i++){
+      teams[i].punti = randomNumber();
+      teams[i].falli = randomNumber();
+      console.log("Nome: " + teams[i].nome);
+      console.log("Punti: " + teams[i].punti);
+      console.log("Falli Subiti: "+ teams[i].falli);
+    };
+    </script>
+  </body>
+</html>
